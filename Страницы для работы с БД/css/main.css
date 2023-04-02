@@ -1,0 +1,254 @@
+/*
+1-  General Styles
+2-  Form Styling
+3-  Spacing Helping Classes
+4-  parallax
+5-  Header
+6-  Inner Pages
+7-  Blog
+8-  Responsive
+*/
+
+/*=====================
+1-General Styles
+======================*/
+@font-face {
+    font-family: 'Intro';
+    src: local('Intro'), url('../fonts/intro.woff2') format('woff2'), url('../fonts/intro.woff') format('woff'), url('../fonts/intro.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}/*шрифт заголовка*/
+
+.red {color:#ffc000} /*оранжевый цвет в словах*/
+
+
+a { outline: none !important; color:#d95d04; } /*цвет до наводки курсором на разраба*/
+h2, h3, h6 {
+	font-family: 'Intro', sans-serif;
+	margin:10px 0;
+	font-weight:bold;
+}/*шрифт заголовка и всего*/
+
+h2 { font-size: 41px; } /*размер заголовков поиска и контактов*/
+h3 { font-size: 26px; }
+h6 { font-size: 16px; } /*размеры текста телефона и майла*/
+
+
+.text-center { text-align: center; } /*выравнивае контактной инф и кнопки*/
+.btn-default{
+	background:#ffc000; /*цвет кнопки*/
+	color:#fff; /*цвет текста кнопки*/
+} /*цвет кнопки до наводки*/
+.btn{
+	padding:20px 42px;
+	border:none;
+	border-radius:4px;
+	font-weight:bold;
+	text-transform:inherit;
+    font-size: 16px;
+    transition:All 0.5s ease;
+-webkit-transition:All 0.5s ease;
+-moz-transition:All 0.5s ease;
+-o-transition:All 0.5s ease;
+}/*анимация и норм вид кнопки*/
+
+
+.color-white{ color: #fff; } /*цвет нижней надписи названия сайта*/
+
+/*===============================================
+2-Form Styling
+=================================================*/
+form .btn{
+	padding-top:10px;
+	padding-bottom:10px;
+	
+} /*размер кнопок*/
+input[type="text"],input[type="text"],input[type="number"],textarea{ /*поля ввода*/
+	width:100%; /*размер полей ввода*/
+    
+	border:none; /*рамка поля ввода*/
+	color:#212121;     /*цвет текста ввода*/
+	
+	border-radius:10px; /*закругление рамок ввода*/
+	height:42px; /*высота рамок*/
+	padding:10px 15px; /*длина текста и рамки*/
+	text-transform:inherit; /*ввод какая буква*/
+    margin-bottom: 20px; /*расстояние между полями ввода*/
+    font-size: 15px; /*размер надписи чек кухня и тд в поле*/
+}
+
+
+
+/*==============================================
+3-Spacing Helping Classes
+===============================================*/
+.mb-30{ margin-bottom:30px;} /*положение кнопки позвонить*/
+/*==========================
+4-parallax
+==========================*/
+
+/*====================================
+5-Header
+======================================*/
+
+
+
+.navbar-custom{
+    padding: 20px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 10px 0 44px;
+    z-index: 999;
+} /*положения шапки*/
+.navbar-custom nav{
+    position: absolute;
+    right: 0;
+    top: 5px;
+}/*положения шапки*/
+.navbar-custom .container{
+    position: relative;
+}/*положения шапки*/
+
+.navbar-custom nav li{
+    display: inline-block;
+    padding: 0 10px;
+}/*положения навигатора*/
+
+.navbar-custom nav li:hover a{
+    color: #fff;
+}/*цвет  навигатора при нажатии*/
+.navbar-custom nav a{
+    color: #fff;
+    padding: 10px 5px;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    position: relative;
+}/*подчеркивание  навигатора при нажатии*/
+
+
+
+.main-menu > li > ul > li > a:hover{
+    color: #000;
+}/*цвет подчеркивания при наведении навигатора*/
+.navbar-custom nav li.active a:after,.navbar-custom nav li:hover a:after{
+    content: '';
+    height: 3px;
+    width: 80%;
+    background: #fff;
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+}/*подчеркивание навигатора*/
+
+.eschool .header{
+    background-image: url(../img/BG3.jpg);
+    background-size: cover;
+    color: #fff;
+    padding:130px 0 60px 0;
+    font-size: 18px;
+}/*фон картинка*/
+
+/*====================================
+6-Inner Pages
+======================================*/
+
+footer{
+    background: #181413;
+    padding: 25px;
+} /*нижняя плашка с автором*/
+
+.image{
+	padding: 0px 50px 0px 800px;
+}
+.slovo{
+padding: 250px;
+font-family: "Times New Roman", Georgia, Serif;
+font-weight: 800;
+font-stretch: normal;}
+
+.select {
+    position: relative;
+}
+.select select {
+	width:100%; /*размер полей ввода*/
+    border:none; /*рамка поля ввода*/
+	color:#212121;     /*цвет текста ввода*/
+	border-radius:10px; /*закругление рамок ввода*/
+	height:42px; /*высота рамок*/
+	padding:10px 15px; /*длина текста и рамки*/
+	text-transform:inherit; /*ввод какая буква*/
+    margin-bottom: 20px; /*расстояние между полями ввода*/
+    font-size: 15px; /*размер надписи чек кухня и тд в поле*/
+    display: block;
+    width: 100%; /* от ширины блока div */
+    padding: .75rem 2.5rem .75rem 1rem;/* отступы от текста до рамки */ 
+    -webkit-appearance: none;/* Chrome */
+    -moz-appearance: none;/* Firefox */
+    appearance: none;/* убираем дефолнтные стрелочки */
+    font-family: inherit;/* наследует от родителя */
+    font-size: 1.5rem;
+    color: #212121;
+}
+.select:after {
+    content: "";
+    display: block;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: #000 transparent transparent transparent;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    z-index: 1;
+    margin-top: -3px;
+}
+.sasanya {
+	text-align: center;
+	color:orange; 
+	width: 1500px;
+	font-weight: 800;
+	font-size: 150%;
+}
+.vivod{
+	margin-bottom: 20px;
+	border: 5px solid #fff;
+	border-top: 5px solid #fff;
+	border-bottom: 3px solid #fff;
+	border-collapse: collapse; 
+	outline: 3px solid #ffd300;
+	font-size: 15px;
+	background: #fff!important;
+	color:black;
+	
+}
+.vivodth {
+	font-weight: bold;
+	padding: 7px;
+	background: #ffd300;
+	border: none;
+	text-align: left;
+	font-size: 15px;
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #ffd300;
+	text-align:center;
+	color:black;
+	background: #fff!important;
+	outline: 3px solid #ffd300;
+}
+.vivodtd {
+	padding: 7px;
+	border: none;
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	font-size: 15px;
+	outline: 3px solid #ffd300;
+	text-align:center;
+	color:black;
+	background: #fff!important;
+}
+.vivod tbody tr:nth-child(even){
+	background: #f8f8f8!important;
+}
