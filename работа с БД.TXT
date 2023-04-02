@@ -1,0 +1,8 @@
+--добавление данных в таблицу заказа
+insert into orders values(4, '2023.03.05',NULL,'в работе', 4, 1,3);
+--изменение статуса заказа
+UPDATE orders SET status = 'выполнено' WHERE order_num = 4; 
+--удаление выполненного заказа
+DELETE FROM orders WHERE order_num = 4; 
+--вывод даты завершенных заказов
+select date_over as "Дата завершения заказа" from orders where status='выполнен';
